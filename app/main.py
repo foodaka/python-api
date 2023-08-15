@@ -12,7 +12,11 @@ from app.services import PineconeService
 from typing import List
 import csv
 
-app = FastAPI()
+app = FastAPI(
+    title="fastapi",
+    version=0.1,
+    root_path="/"
+)
 pineconeOps = PineconeService()
 
 
